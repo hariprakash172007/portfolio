@@ -18,7 +18,7 @@ export default function About() {
             01 — About
           </Reveal>
           <Reveal as="h2" id="about-title" className="section-title" delay={0.08}>
-            Curious Mind. <em>Creative Builder.</em>
+            Curious Mind <em>Creative Builder</em>
           </Reveal>
         </div>
 
