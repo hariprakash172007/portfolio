@@ -104,7 +104,7 @@ export default function Projects() {
               02 — Featured Work
             </Reveal>
             <Reveal as="h2" id="work-title" className="section-title" delay={0.08}>
-              Selected <em>projects.</em>
+              Selected <em>projects</em>
             </Reveal>
           </div>
           <Reveal as="p" className="projects__intro" delay={0.14}>

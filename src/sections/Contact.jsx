@@ -93,7 +93,7 @@ export default function Contact() {
             06 — Contact
           </Reveal>
           <Reveal as="h2" id="contact-title" className="section-title" delay={0.08}>
-            Let&apos;s create something <em>meaningful.</em>
+            Let&apos;s create something <em>meaningful</em>
           </Reveal>
 
           <Reveal as="ul" className="contact__links" delay={0.16}>

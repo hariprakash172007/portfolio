@@ -49,7 +49,7 @@ export default function Services() {
             05 — Services
           </Reveal>
           <Reveal as="h2" id="services-title" className="section-title" delay={0.08}>
-            How I can <em>help.</em>
+            How I can <em>help</em>
           </Reveal>
         </div>
 

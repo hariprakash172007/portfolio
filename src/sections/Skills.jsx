@@ -25,7 +25,7 @@ export default function Skills() {
             03 — Skills &amp; Technologies
           </Reveal>
           <Reveal as="h2" id="skills-title" className="section-title" delay={0.08}>
-            The <em>toolkit</em> behind the work.
+            The <em>toolkit</em> behind the work
           </Reveal>
         </div>
 

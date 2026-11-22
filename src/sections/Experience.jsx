@@ -15,7 +15,7 @@ export default function Experience() {
             04 — Experience &amp; Achievements
           </Reveal>
           <Reveal as="h2" id="experience-title" className="section-title" delay={0.08}>
-            Where I&apos;ve <em>learned</em> &amp; led.
+            Where I&apos;ve <em>learned</em> &amp; led
           </Reveal>
 
           <Reveal as="ul" className="experience__strengths" delay={0.16} aria-label="Core strengths">
