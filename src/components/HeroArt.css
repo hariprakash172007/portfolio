@@ -1,0 +1,128 @@
+.heroart {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  touch-action: pan-y;
+}
+
+.heroart__layer {
+  position: absolute;
+  inset: 0;
+}
+
+.heroart__layer--front {
+  display: grid;
+  place-items: center;
+}
+
+.heroart__ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px dashed rgba(16, 16, 16, 0.28);
+  animation: heroart-spin 70s linear infinite;
+}
+
+.heroart__ring::after {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  border-radius: 50%;
+  background: var(--ink);
+}
+
+.heroart__ring--inner {
+  inset: 14%;
+  animation-direction: reverse;
+  animation-duration: 50s;
+}
+
+.heroart__ring--inner::after {
+  background: var(--lime-deep);
+}
+
+.heroart__disc {
+  position: absolute;
+  top: 6%;
+  right: 4%;
+  width: 52%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--lime);
+}
+
+.heroart__square {
+  position: absolute;
+  bottom: 8%;
+  left: 6%;
+  width: 36%;
+  aspect-ratio: 1;
+  border-radius: 22px;
+  background: var(--ink);
+  transform: rotate(12deg);
+}
+
+.heroart__half {
+  position: absolute;
+  bottom: 12%;
+  right: 8%;
+  width: 34%;
+  height: 17%;
+  border-radius: 999px 999px 0 0;
+  border: 1.5px solid var(--ink);
+  border-bottom: 0;
+}
+
+.heroart__dot {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--ink);
+}
+
+.heroart__dot--a {
+  top: 30%;
+  left: 12%;
+  width: 14px;
+  height: 14px;
+}
+
+.heroart__dot--b {
+  top: 8%;
+  left: 38%;
+  width: 8px;
+  height: 8px;
+  background: var(--lime-deep);
+}
+
+.heroart__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1rem;
+  padding: clamp(1.4rem, 3vw, 2.4rem) clamp(1.6rem, 3.4vw, 2.8rem);
+  background: var(--ivory);
+  border: 1px solid var(--line-light);
+  border-radius: 26px;
+  box-shadow: 0 30px 60px -28px rgba(16, 16, 16, 0.35);
+  color: var(--ink);
+}
+
+.heroart__tag {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--grey);
+  text-align: center;
+}
+
+@keyframes heroart-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,125 @@
+.skills__head {
+  margin-bottom: clamp(2.5rem, 6vw, 5rem);
+}
+
+.skills .section-title {
+  max-width: 12ch;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.skills__group {
+  grid-column: span 3;
+  padding: clamp(1.4rem, 2.5vw, 2rem);
+  border: 1px solid var(--line-dark);
+  border-radius: var(--radius);
+  background: var(--ink-2);
+  transition: border-color 0.35s var(--ease);
+}
+
+.skills__group:hover {
+  border-color: rgba(185, 216, 120, 0.5);
+}
+
+/* Asymmetry: frontend is wide, backend/db/tools share a row */
+.skills__group--frontend {
+  grid-column: span 4;
+}
+
+.skills__group--backend {
+  grid-column: span 2;
+}
+
+.skills__group--database {
+  grid-column: span 2;
+}
+
+.skills__group--tools {
+  grid-column: span 4;
+}
+
+.skills__group-head {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.skills__group-head h3 {
+  font-size: var(--fs-h3);
+}
+
+.skills__group-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(185, 216, 120, 0.12);
+  color: var(--lime);
+}
+
+.skills__count {
+  margin-left: auto;
+  font-family: var(--font-display);
+  font-size: var(--fs-small);
+  letter-spacing: 0.1em;
+  color: var(--grey);
+}
+
+.skills__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skills__card {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--line-dark);
+  background: var(--ink);
+  font-family: var(--font-display);
+  font-size: 0.98rem;
+  font-weight: 500;
+  cursor: default;
+  transition: background 0.3s var(--ease), color 0.3s var(--ease),
+    border-color 0.3s var(--ease);
+}
+
+.skills__tick {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--lime);
+  transition: background 0.3s var(--ease);
+}
+
+.skills__card:hover {
+  background: var(--lime);
+  border-color: var(--lime);
+  color: var(--ink);
+}
+
+.skills__card:hover .skills__tick {
+  background: var(--ink);
+}
+
+@media (max-width: 860px) {
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+  .skills__group,
+  .skills__group--frontend,
+  .skills__group--backend,
+  .skills__group--database,
+  .skills__group--tools {
+    grid-column: auto;
+  }
+}

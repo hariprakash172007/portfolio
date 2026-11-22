@@ -1,0 +1,13 @@
+/* App-level styles: page shell and shared motion helpers */
+
+.app {
+  min-height: 100vh;
+}
+
+.app main {
+  display: block;
+}
+
+.reveal {
+  will-change: transform, opacity;
+}

@@ -1,0 +1,97 @@
+.pv,
+.pv-image {
+  width: 100%;
+  height: 100%;
+}
+
+.pv-image {
+  object-fit: cover;
+}
+
+.pv svg {
+  width: 100%;
+  height: 100%;
+}
+
+.pv-bg-ink { fill: var(--ink); }
+.pv-bg-ink2 { fill: #181817; }
+.pv-bg-lime { fill: var(--lime); }
+.pv-bg-ivory2 { fill: var(--ivory-2); }
+
+.pv-fill-lime { fill: var(--lime); }
+.pv-fill-lime-deep { fill: var(--lime-deep); }
+.pv-fill-ivory { fill: var(--ivory); }
+.pv-fill-ink { fill: var(--ink); }
+
+.pv-stroke-soft {
+  fill: none;
+  stroke: rgba(245, 243, 237, 0.16);
+  stroke-width: 1.5;
+}
+
+.pv-stroke-ink {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+
+.pv-stroke-ink-thin {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.5;
+  opacity: 0.4;
+}
+
+.pv-dash-lime {
+  fill: none;
+  stroke: var(--lime);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 7;
+  opacity: 0.7;
+}
+
+.pv-route {
+  fill: none;
+  stroke: var(--ivory);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 2 9;
+}
+
+.pv-line-ink {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.pv-ring-ink {
+  stroke: var(--ink);
+  stroke-width: 3;
+}
+
+.pv-check {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.pv-pulse {
+  fill: var(--lime);
+  transform-origin: 200px 150px;
+  animation: pv-pulse 2.4s ease-out infinite;
+}
+
+@keyframes pv-pulse {
+  from {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+  to {
+    transform: scale(4.5);
+    opacity: 0;
+  }
+}
